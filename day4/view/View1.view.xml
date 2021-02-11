@@ -1,0 +1,10 @@
+<mvc:View controllerName="day4.controller.View1" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="This is title">
+				<content></content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
