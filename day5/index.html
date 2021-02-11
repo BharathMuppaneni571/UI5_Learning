@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>firstapplication</title>
+		<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/1.85.1/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-resourceroots='{"day5": ""}'>
+		</script>
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				
+				debugger;
+				
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "day5"
+					})
+				}).placeAt("content");
+			});
+			
+			debugger;
+			
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+</html>

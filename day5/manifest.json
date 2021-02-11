@@ -1,7 +1,7 @@
 {
 	"_version": "1.7.0",
 	"sap.app": {
-		"id": "day4",
+		"id": "day5",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -33,7 +33,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "day4.view.View1",
+			"viewName": "day5.view.View1",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -48,7 +48,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "day4.i18n.i18n"
+					"bundleName": "day5.i18n.i18n"
 				}
 			}
 		},
