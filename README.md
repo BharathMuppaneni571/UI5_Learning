@@ -2,4 +2,5 @@
 This is for learning purpose
 
 
-# for friends - Delete kiya to markayega 😁.
+
+for friends - Delete kiya tho markhayega 😁.
