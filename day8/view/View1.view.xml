@@ -1,0 +1,37 @@
+<mvc:View controllerName="day8.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" displayBlock="true" xmlns="sap.m"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Table id="idMTable" items="{/Products}">
+						<columns>
+							<Column width="20em">
+								<Text text="Product Name"/>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Quantity PerUnit"/>
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+								<Text text="Unit Price"/>
+							</Column>
+							<Column demandPopin="true" hAlign="Center">
+								<Text text="Units In Stock"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<ObjectIdentifier text="{ProductName}"/>
+									<Text text="{QuantityPerUnit}"/>
+									<Text text="{UnitPrice}"/>
+									<ObjectNumber number="{UnitsInStock}" state="{= ${UnitsInStock} > 10 ? 'Success' : 'Error'}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
