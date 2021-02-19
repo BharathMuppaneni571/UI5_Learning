@@ -1,0 +1,36 @@
+<mvc:View controllerName="day7.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
+	<!--added xmlns:f="sap.ui.layout.form" with f as its alias-->
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					
+					<HBox justifyContent="SpaceAround">
+						<List items="{/coleagues/}" id="idList" headerText="{i18n>Coleague's}">
+							<StandardListItem title="{name}" info="{mail}" icon="{image}" description="{mobile}" press=".onItemSelect" type="Active"/>
+						</List>
+					
+						<f:SimpleForm id="idSimpleForm" title="Edit Details" editable="true" layout="ResponsiveGridLayout" visible="false">
+							<f:content>
+								<Label text="Name"/>
+								<Input value="{name}"/>
+								<Label text="City"/>
+								<Input value="{city}"/>
+								<Label text="Mobile"/>
+								<Input value="{mobile}"/>
+								<Label text="City"/>
+								<Input value="{city}"/>
+							</f:content>
+						</f:SimpleForm>
+					</HBox>
+				</content>
+				<footer>
+				<Toolbar>
+				<ToolbarSpacer/>
+					<Button id="idSaveBtn" text="{i18n>Save}" visible="false" press=".onSavePress"/>
+				</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
