@@ -1,0 +1,37 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="day9.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="Employee Details View">
+				<content>
+					<f:SimpleForm id="idSimpleForm" title="Employee Details" layout="ResponsiveGridLayout">
+						<f:content>
+							<Label text="Employee ID"/>
+							<Text text="{EmployeeID}" />
+							<Label text="Last Name"/>
+							<Text text="{LastName}" />
+							<Label text="First Name"/>
+							<Text text="{FirstName}" />
+							<Label text="Title"/>
+							<Text text="{Title}" />
+							<Label text="Date of Birth"/>
+							<Text text="{
+										path : 'BirthDate',
+										formatter: '.formatter.customFormatDate'
+										}" />
+							<!--<DatePicker dateValue="{BirthDate}"/>-->
+							<Label text="Address"/>
+							<Text text="{Address}" />
+							<Label text="City"/>
+							<Text text="{City}" />
+							<Label text="Country"/>
+							<Text text="{Country}" />
+							<Label text="Notes"/>
+							<Text text="{Notes}" />
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
