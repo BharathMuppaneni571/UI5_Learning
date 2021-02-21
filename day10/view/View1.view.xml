@@ -1,0 +1,27 @@
+<mvc:View controllerName="day10.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" displayBlock="true" xmlns="sap.m"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="idView1">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<List items="{/Products}" id="idList" headerText="Products">
+						<headerToolbar>
+							<Toolbar>
+								<ToolbarSpacer/>
+								<SearchField width="50%" liveChange=".onSearch"/>
+							</Toolbar>
+						</headerToolbar>
+						<items>
+							<ObjectListItem title="{ProductName}"
+											number="{UnitPrice}" 
+											type="Active" 
+											press=".onItemSelect">
+								<ObjectAttribute text="{QuantityPerUnit}" />
+							</ObjectListItem>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
