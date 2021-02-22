@@ -64,7 +64,10 @@
 				"viewType": "XML",
 				"viewPath": "day9.view",
 				"controlId": "idView1",
-				"controlAggregation": "pages"
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": "notFound"
+				}
 			},
 			"routes": [{
 				"pattern": "",
@@ -87,6 +90,10 @@
 					"transition": "slide",
 					"viewName": "View2",
 					"viewLevel": 2
+				},
+				"notFound": {
+					"viewName": "NotFound",
+					"transition": "show"
 				}
 			}
 		}

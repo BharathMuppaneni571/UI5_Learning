@@ -1,0 +1,8 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="day9.controller.NotFound"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<MessagePage title="Not Found" text="Sorry, Requested resource is not available." description="Please check the URL and try again."/>
+		</pages>
+	</App>
+</mvc:View>
