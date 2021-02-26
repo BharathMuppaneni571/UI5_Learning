@@ -1,0 +1,25 @@
+<mvc:View controllerName="namespacetoDoList.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<VBox>
+						<List items="{/tasks}" id="idList" headerText="{i18n>List_Header}" noDataText="No pending tasks" growing="true" growingThreshold="10"
+							growingTriggerText="Load remaining task's">
+							<!--mode="Delete" delete=".onHandleDelete" add this to above list for adding remove button -->
+							<headerToolbar>
+								<OverflowToolbar>
+									<Label text="To Do List" design="Bold"/>
+									<ToolbarSpacer/>
+									<Button icon="sap-icon://add" press=".onAddTask"/>
+								</OverflowToolbar>
+							</headerToolbar>
+							<StandardListItem title="{Description}" info="{Priority}" description="{DueDate}" press=".onItemPress" type="Active"/>
+						</List>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

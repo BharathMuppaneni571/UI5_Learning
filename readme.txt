@@ -1,0 +1,11 @@
+day1 = loading ui5 library
+day2 = componentjs file importance
+day3 = added view and controller and manifest
+day4 = added i18n file 
+day5 = sample login application (demo of getting values from ui elements)
+day6 = Json model, two-way data binding, enabling complex binding
+day7 = JSON model two-way uses, I18n text manipulation
+day8 = sap.m.Table control using Northwind OData service
+day9 = Routing, Navigation with parameters, Formatters
+day10 = Filtering
+toDoList = Assignment application mimicing todolist functionality
