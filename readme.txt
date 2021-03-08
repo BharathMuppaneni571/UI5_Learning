@@ -9,3 +9,4 @@ day8 = sap.m.Table control using Northwind OData service
 day9 = Routing, Navigation with parameters, Formatters
 day10 = Filtering
 toDoList = Assignment application mimicing todolist functionality
+SAPUI5_CRUD = Demo Application that describes CRUD operations in UI5 (using northwind need to change the API key).
