@@ -1,0 +1,56 @@
+<mvc:View xmlns:core="sap.ui.core"
+    controllerName="UI5.BH571.googleDictionaryAPI.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<MessageStrip 	text="Information is queried from google dictionary API" 
+									showIcon="true"	showCloseButton="true"	class="sapUiMediumMarginBottom"/>
+															
+						<Input id="idSearchTerm" value="" placeholder="Enter search term..." liveChange="fireLiveSearch"></Input>
+						
+						<f:SimpleForm id="idResult"
+							editable="false"
+							layout="ResponsiveGridLayout"
+							title="Meaning"
+							labelSpanXL="3"
+							labelSpanL="3"
+							labelSpanM="3"
+							labelSpanS="12"
+							adjustLabelSpan="false"
+							emptySpanXL="4"
+							emptySpanL="4"
+							emptySpanM="4"
+							emptySpanS="0"
+							columnsXL="1"
+							columnsL="1"
+							columnsM="1"
+							singleContainerFullSize="false" >
+							<f:content>
+								<Label text="Phonetics" />
+								<Text id="idText" text="{/Text}" />
+								<core:Icon press="playAudio" src="sap-icon://sound-loud" color="red" width="20%"></core:Icon>
+								<Label text="Word" />
+								<Text id="idWord" text="{/Word}" />
+								<Label text="Meaning" />
+								<Text id="idSynonyms" text="{/Meaning}" />
+								<Label text="Part of Speech" />
+								<Text id="idPartOfSpeech" text="{/PartOfSpeech}" />
+								<Label text="Example" />
+								<Text id="idExample" text="{/Example}" />
+							</f:content>
+						</f:SimpleForm>
+
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
