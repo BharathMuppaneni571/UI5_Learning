@@ -1,0 +1,34 @@
+specVersion: "2.4"
+metadata:
+  name: namespace.SAPUI5_CRUD
+type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false
+        backend:
+          - path: /sap
+            url: ""
+            destination: northwind
+          - path: /northwind/V2/(S(0c55mtvmhs3kmmxlr1dccqxx))/OData/OData.svc/
+            url: ""
+            destination: northwind
+        ui5:
+          path:
+            - /resources
+            - /test-resources
+          url: https://ui5.sap.com
+          version: ""
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: namespace.SAPUI5_CRUD
+        ui5Theme: sap_fiori_3
