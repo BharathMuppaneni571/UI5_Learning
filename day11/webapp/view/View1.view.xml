@@ -1,0 +1,26 @@
+<mvc:View
+    controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Shell id="shell">
+        <App id="app"> 
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content/>
+                    <footer>
+                        <OverflowToolbar id="otbFooter">
+                            <Button
+                                icon="sap-icon://alert"
+                                text="{=${messageModel>/}.length}"
+                                type="Reject"
+                                press="onShowDisplayErrors">
+                            </Button>
+                            <ToolbarSpacer/>
+                        </OverflowToolbar>
+                    </footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
