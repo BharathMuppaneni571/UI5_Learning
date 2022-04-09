@@ -13,6 +13,7 @@
                             <Button
                                 icon="sap-icon://alert"
                                 text="{=${messageModel>/}.length}"
+                                visible="{=${messageModel>/}.length > 0 ? true : false}"
                                 type="Reject"
                                 press="onShowDisplayErrors">
                             </Button>
